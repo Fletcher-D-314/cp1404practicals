@@ -2,11 +2,11 @@ MIN_LENGTH = 8
 
 
 def main():
-    password = input_password(MIN_LENGTH)
+    password = get_password()
     print_password_hidden(password)
 
 
-def input_password(password):
+def get_password():
     print("Please input a password")
     print("A password is only valid if it has more than {} characters".format(MIN_LENGTH))
     password = input(": ")
