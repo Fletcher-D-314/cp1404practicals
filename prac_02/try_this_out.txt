@@ -1,0 +1,11 @@
+a)
+I saw the number 12
+Smallest is 5 and largest is 20
+
+b)
+I saw the number 7
+smallest is a 3 and largest is a 9
+no
+
+c)
+Smallest is 2.5 and largest is 5.5
