@@ -1,3 +1,7 @@
+"""
+Word occurrences
+"""
+
 word_to_frequency = {}
 sentence = input("Enter a sentence: ")
 sentence_set = sentence.split(" ")
