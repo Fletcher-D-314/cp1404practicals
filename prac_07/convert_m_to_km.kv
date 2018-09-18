@@ -1,16 +1,29 @@
 BoxLayout:
     orientation: "vertical"
     BoxLayout:
-    orientation: "horizontal"
-        Label:
-            text: "white"
+        orientation: "horizontal"
+        TextInput:
+            id: input_miles
+            text: " "
         BoxLayout:
             orientation: "vertical"
-            Label:
+            size_hint_x: 0.25
+            Button:
                 text: "Up"
-            Label:
+                font_size: 27
+                on_press: app.handle_up_down(1)
+            Button:
                 text: "Down"
-     Label:
-        text: "Grey"
+                font_size: 27
+                on_press: app.handle_up_down(-1)
+
+    Button:
+        text: "Convert mile to km"
+        font_size: 27
+        id: press_convert
+        on_press: app.handle_calculation()
     Label:
-        text: "black"
+        id: output_miles
+        text:
+        font_size: 37
+        color: (1, 1, 0, 1)
