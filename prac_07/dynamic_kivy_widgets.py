@@ -15,5 +15,6 @@ class IDDemo(App):
 
     def make_labels(self):
         for name in LIST:
-            button = Button(text=name)
-            print(button)
+            temp_button = Button(text=name)
+            self.root.ids.entries_box.add_widget(temp_button)
+IDDemo().run()

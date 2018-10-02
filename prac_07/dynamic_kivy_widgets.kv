@@ -1,7 +1,4 @@
 BoxLayout:
     orientation: "vertical"
-    id: enter_labels
-    Button:
-        id: show_labels
-        make_labels()
-        text: " "
+    id: entries_box
+    temp_button.bind(on_release=self.press_entry)

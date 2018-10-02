@@ -16,7 +16,7 @@ class SquareNumberApp(App):
     """ SquareNumberApp is a Kivy App for squaring a number """
     def build(self):
         """ build the Kivy app from the kv file """
-        Window.size = (500, 500)
+        Window.size = (400, 300)
         self.title = "Square Number"
         self.root = Builder.load_file('squaring.kv')
         return self.root
