@@ -25,6 +25,14 @@ Result:
 # TODO: 2. use the debugger to step through and see what's actually happening
 # print(do_it(5))
 
+def pyramid(n):
+    if n < 0:
+        return
+    return n + (n - 1)
+
+
+print(pyramid(6))
+
 
 def do_something(n):
     """Print the squares of positive numbers from n down to 0."""
@@ -71,7 +79,6 @@ def get_pyramid_blocks(n):
     if n <= 0:
         return 0
     return n + get_pyramid_blocks(n - 1)
-
 
 
 print(get_pyramid_blocks(6))
