@@ -22,7 +22,10 @@ def get_extensions(extensions):
 
 def make_directory(extensions):
     for extension in extensions:
-        os.mkdir("{}/FilesToSort/{}".format(DIRECTORY, extension))
+        try:
+            os.mkdir("{}/FilesToSort/{}".format(DIRECTORY, extension))
+        except FileExistsError:
+            pass
 
 
 def move_files(extensions):
